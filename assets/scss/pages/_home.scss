@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+nav {
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+
+    .navRight {
+        justify-content: end;
+    }
+
+    .menuSpan {
+        display: none;
+    }
+}
+
+#hero {
+    position: relative;
+    // height: 100px;
+    width: 100%;
+
+    .row {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .col-6 {
+        background-color: #D4EAF5;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .heroDivOne {
+            h3 {
+                font-size: 45px;
+                font-weight: 300;
+            }
+
+            h4 {
+                font-size: 45px;
+                font-weight: 700;
+            }
+
+            p {
+                line-height: 1.2;
+                width: 80%;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        .img {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 14px 20px;
+            border-radius: 40px;
+            border: 0;
+            outline: 0;
+            color: #267aa4;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+    }
+
+}
+
+.sec-two {
+    margin: 10px 0;
+
+    .row {
+        padding: 0;
+        margin: 0;
+
+        .sec-two-col {
+            margin: 10px 0;
+
+            .secTwoDiv {
+                background-color: #F5EBEB;
+                padding: 30px 20px;
+
+                i {
+                    color: #fff;
+                    padding: 15px;
+                    background-color: #CB9696;
+                    font-size: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+}
+
+.sec-three {
+    background-image: url("/assets/img/bg_4.jpg");
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .sec-three-main-content {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+
+        .sec-three-content {
+            width: 45%;
+            padding: 30px;
+
+            .span-one {
+                color: #BBB9BA;
+                font-size: 13px;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                margin: 20px 0;
+                font-size: 38px;
+                font-weight: 600;
+            }
+
+            p {
+                line-height: 1.8;
+                font-size: 18px;
+                color: #acaaab;
+                padding-bottom: 20px;
+            }
+
+            .sec-three-btns {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                i {
+                    padding: 30px 32px;
+                    border-radius: 50%;
+                    background-color: #CF7500;
+                    color: #fff;
+                }
+
+                span {
+                    color: #CF7500;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:991px) {
+    header {
+        background-color: #1C5B7B;
+    }
+
+    nav {
+        color: #fff !important;
+
+        .menuSpan {
+            display: inline;
+        }
+    }
+
+    #hero {
+        .row {
+            position: relative;
+
+            .heroDivOne {
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                h3{
+                    font-size: 30px;
+                }
+                h4{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .sec-three {
+        .sec-three-main-content {
+            width: 100% !important;
+        }
+        .sec-three-content{
+            width: 90% !important;
+        }
+    }
+}
